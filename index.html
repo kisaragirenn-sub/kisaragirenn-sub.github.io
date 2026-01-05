@@ -14,10 +14,19 @@
     }
 
     video { pointer-events: none; }
+
+    .video-container video {
+  width: 100%;       /* 親要素の幅いっぱいに広がる */
+  height: auto;      /* 高さを自動調整 */
+  aspect-ratio: 16 / 9; /* アスペクト比を16:9に固定 */
+}
+
   </style>
 </head>
     <body>
+    <div class="video-container">  
     <video src="/mov/birthday.mp4" controlslist="nodownload"  width="1340px" height="680px"></video>
+    </div>
     <a href="/message"><p>メッセージ</p></a>
     </body>
 </html>
